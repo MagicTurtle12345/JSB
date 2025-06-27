@@ -1,0 +1,295 @@
+/* CSS RIÊNG CHO TRANG ABOUT - Styling đặc biệt cho trang giới thiệu */
+
+/* ABOUT HERO - Phần hero của trang about */
+.about-hero {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.about-hero-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  color: #2d5a27;
+  margin-bottom: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.about-text .lead {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* VALUES SECTION - Phần giá trị cốt lõi */
+.values-section {
+  padding: 100px 0;
+  background-color: white;
+}
+
+.values-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d5a27;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+.values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.value-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+  padding: 40px 30px;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.value-item h3 {
+  font-size: 1.5rem;
+  color: #2d5a27;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.value-item p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* TEAM SECTION - Phần đội ngũ */
+.team-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d5a27;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.team-member {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.member-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.member-info {
+  padding: 30px;
+  text-align: center;
+}
+
+.member-info h3 {
+  font-size: 1.4rem;
+  color: #2d5a27;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.position {
+  font-size: 1rem;
+  color: #ff9500;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.description {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* AWARDS SECTION - Phần giải thưởng */
+.awards-section {
+  padding: 100px 0;
+  background-color: white;
+}
+
+.awards-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d5a27;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+.awards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.award-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 280px;
+  text-align: center;
+  padding: 40px 25px;
+  background: linear-gradient(135deg, #ff9500, #ffb347);
+  color: white;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.award-item:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+.award-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.award-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.award-item p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* RESPONSIVE CHO TRANG ABOUT - Thiết kế đáp ứng */
+@media (max-width: 768px) {
+  .about-hero-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .about-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-text .lead {
+    font-size: 1.1rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .values-grid,
+  .team-grid,
+  .awards-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .value-item,
+  .team-member,
+  .award-item {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .values-section h2,
+  .team-section h2,
+  .awards-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 60px 0;
+  }
+
+  .values-section,
+  .team-section,
+  .awards-section {
+    padding: 60px 0;
+  }
+
+  .about-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .value-item,
+  .team-member .member-info,
+  .award-item {
+    padding: 25px 20px;
+  }
+
+  .about-image img {
+    height: 300px;
+  }
+}

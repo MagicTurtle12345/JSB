@@ -1,0 +1,197 @@
+/* CSS RIÊNG CHO TRANG MENU - Styling đặc biệt cho trang menu */
+
+/* PAGE HEADER - Tiêu đề trang */
+.page-header {
+  background: linear-gradient(135deg, #2d5a27, #4a7c59);
+  color: white;
+  padding: 100px 0 60px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* MENU SECTION ALTERNATE - Phần menu với màu nền khác */
+.menu-section.alternate {
+  background-color: #f8f9fa;
+}
+
+.section-header p {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* MENU GRID FULL - Lưới menu đầy đủ thông tin */
+.menu-grid-full {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-item-full {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.menu-item-full:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.menu-section.alternate .menu-item-full {
+  background-color: #fff;
+}
+
+.menu-item-full img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.menu-item-full .menu-info {
+  flex: 1;
+}
+
+.menu-item-full .menu-info h3 {
+  font-size: 1.4rem;
+  color: #2d5a27;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.menu-item-full .menu-info p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* INGREDIENTS - Thông tin thành phần món ăn */
+.ingredients {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  background-color: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border-left: 3px solid #2d5a27;
+}
+
+.menu-item-full .menu-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2d5a27;
+  flex-shrink: 0;
+  background-color: #f0f8f0;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 2px solid #e8f5e8;
+}
+
+/* CTA SECTION - Phần kêu gọi hành động */
+.cta-section {
+  background: linear-gradient(135deg, #ff9500, #ffb347);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta-section .btn-primary {
+  background-color: white;
+  color: #ff9500;
+  font-size: 1.1rem;
+  padding: 18px 35px;
+  font-weight: 600;
+}
+
+.cta-section .btn-primary:hover {
+  background-color: #f8f8f8;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE CHO TRANG MENU - Thiết kế đáp ứng */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .page-header p {
+    font-size: 1rem;
+  }
+
+  .menu-item-full {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .menu-item-full img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .menu-item-full .menu-price {
+    font-size: 1.5rem;
+    padding: 12px 18px;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .ingredients {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-item-full {
+    padding: 20px;
+  }
+
+  .menu-item-full .menu-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .menu-item-full .menu-info p {
+    font-size: 0.9rem;
+  }
+
+  .ingredients {
+    font-size: 0.8rem;
+  }
+}

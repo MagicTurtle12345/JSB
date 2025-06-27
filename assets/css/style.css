@@ -1,0 +1,464 @@
+/* RESET VÀ THIẾT LẬP CƠ BẢN - Đặt lại các thuộc tính mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #faf8f5;
+}
+
+/* CONTAINER - Khung chứa nội dung chính */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER - Phần đầu trang */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+/* LOGO - Thiết kế logo nhà hàng */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #2d5a27;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2d5a27;
+}
+
+/* NAVIGATION - Menu điều hướng */
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #2d5a27;
+  border-bottom-color: #2d5a27;
+}
+
+/* PHONE - Số điện thoại */
+.phone {
+  background-color: #2d5a27;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+/* HERO SECTION - Phần giới thiệu chính */
+.hero {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-title h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #2d5a27;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+/* HERO GALLERY - Gallery hình ảnh hero */
+.hero-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item.large {
+  transform: scale(1.2);
+}
+
+/* MENU SECTION - Phần menu món ăn */
+.menu-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0 auto 20px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #2d5a27;
+  font-weight: bold;
+}
+
+/* MENU GRID - Lưới hiển thị món ăn */
+.menu-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #faf8f5;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateX(10px);
+}
+
+.menu-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.menu-info {
+  flex: 1;
+}
+
+.menu-info h3 {
+  font-size: 1.2rem;
+  color: #2d5a27;
+  margin-bottom: 5px;
+}
+
+.menu-info p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.menu-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d5a27;
+}
+
+/* MENU BUTTON - Nút trong phần menu */
+.menu-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-primary {
+  background-color: #2d5a27;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1e3d1a;
+}
+
+/* CULTURE SECTION - Phần văn hóa */
+.culture-section {
+  padding: 80px 0;
+}
+
+.culture-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d5a27;
+  margin-bottom: 50px;
+}
+
+.culture-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.culture-item {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.culture-item:hover {
+  transform: translateY(-10px);
+}
+
+.culture-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.culture-item.large {
+  transform: scale(1.1);
+}
+
+/* TESTIMONIAL - Phần đánh giá */
+.testimonial {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #ff9500, #ffb347);
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.testimonial-text {
+  flex: 1;
+  color: white;
+}
+
+.testimonial-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.author-details h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.author-details p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.testimonial-image {
+  flex-shrink: 0;
+}
+
+.testimonial-image img {
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* FOOTER - Phần chân trang */
+.footer {
+  background-color: #2d5a27;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact-info p,
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #4a6b45;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #fff;
+}
+
+/* RESPONSIVE - Thiết kế đáp ứng cho mobile */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+
+  .hero-title h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-gallery,
+  .culture-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-item.large,
+  .culture-item.large {
+    transform: none;
+  }
+
+  .testimonial-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
