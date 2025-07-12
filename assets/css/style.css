@@ -74,8 +74,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover,.nav-link.active {
   color: #2d5a27;
   border-bottom-color: #2d5a27;
 }
@@ -233,47 +232,6 @@ body {
 
 .btn-primary:hover {
   background-color: #1e3d1a;
-}
-
-/* CULTURE SECTION - Phần văn hóa */
-.culture-section {
-  padding: 80px 0;
-}
-
-.culture-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #2d5a27;
-  margin-bottom: 50px;
-}
-
-.culture-gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.culture-item {
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.culture-item:hover {
-  transform: translateY(-10px);
-}
-
-.culture-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.culture-item.large {
-  transform: scale(1.1);
 }
 
 /* TESTIMONIAL - Phần đánh giá */
